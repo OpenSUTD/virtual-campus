@@ -3470,6 +3470,7 @@ ul.feature-icons li:nth-child(2) {
   left: 50vw;
   position: relative;
   width: 50vw;
+  padding: 2rem 2rem;
 }
 
 #wrapper .copyright a {
@@ -3611,9 +3612,6 @@ ul.feature-icons li:nth-child(2) {
     left: calc(50vw - 4rem - 0.25rem + 1px);
   }
 
-  #wrapper .copyright {
-    padding: 2rem 4rem;
-  }
 }
 
 @media screen and (max-width: 1152px) {
@@ -3780,7 +3778,7 @@ ul.feature-icons li:nth-child(2) {
   }
 
   #wrapper .copyright {
-    padding: 0 4rem 4rem 4rem;
+    padding: 2rem 4rem 4rem 4rem;
   }
 }
 
@@ -3814,7 +3812,7 @@ ul.feature-icons li:nth-child(2) {
   }
 
   #wrapper .copyright {
-    padding: 0 2rem 2rem 2rem;
+    padding: 2rem 2rem 2rem 2rem;
   }
 }
 
@@ -3848,7 +3846,7 @@ ul.feature-icons li:nth-child(2) {
   }
 
   #wrapper .copyright {
-    padding: 0 1.5rem 1.5rem 1.5rem;
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
   }
 }
 
