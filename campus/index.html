@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>SUTD Virtual Campus</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  <link rel="stylesheet" href="../js/photo-sphere-viewer.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/three@0.99.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8.1.0/dist/polyfill.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dot@1.1.2/doT.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uevent@1.0.0/uevent.min.js"></script>
+  <script src="../js/photo-sphere-viewer.min.js"></script>
+</head>
+
+<body class="is-preload">
+  <div id="wrapper">
+    <section class="intro">
+      <header>
+        <h1>SUTD Main Campus</h1>
+        <p>SUTD Virtual Campus Tour</p>
+        <ul class="actions">
+          <li><a href="../">RETURN HOME</a></li>
+        </ul>
+        <ul class="actions">
+          <li><a href="#building-1">BUILDING 1</a></li>
+          <li><a href="#building-2">BUILDING 2</a></li>
+          <li><a href="#fablab">FABLAB</a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <span class="image fill" data-position="center"><img src="images/sutd_2.jpg" alt="" /></span>
+      </div>
+    </section>
+
+    <section id="building-1">
+      <header>
+        <h2>Building 1</h2>
+      </header>
+      <div class="content">
+        <p class="content-header">Building 1</p>
+        <p class="content-bolder">Cohort Classrooms</p>
+        <p>
+          Reflecting the values of SUTD, cohort classrooms move and transform
+          with student activity, thanks to their efficient modular design.
+        </p>
+        <img src="images/cohort_class.jpg" width="100%" />
+        <p class="content-bolder">SUTD Library</p>
+        <p>
+          The SUTD Library has a unique design and offers a truly sensory
+          experience from discovery through serendipity to a touch and feel
+          with spaces to read, research and reflect.
+        </p>
+        <img src="images/library.jpg" width="100%" />
+        <p>
+          <br />The following virtual tour takes you through Building 1, from
+          the front yard near Upper Changi MRT to the link bridge between
+          Buildings 1 and 2.
+        </p>
+      </div>
+    </section>
+    <section id="building-2">
+      <header>
+        <h2>Building 2</h2>
+      </header>
+      <div class="content">
+        <p class="content-header">Building 2</p>
+        <p class="content-bolder">Canteen</p>
+        <p>
+          For affordable food options, head down to the Canteen at Building 2
+          Level 2!
+        </p>
+        <p class="content-bolder">Labs</p>
+        <p>
+          Unleash your creativity and reveal new possibilities with
+          laboratories such as the Photo and Video Lab, Data Analytics Lab and
+          the Innovative Digital Arts Lab (iDiA Lab).
+        </p>
+        <p class="content-bolder">Campus Center</p>
+        <p>
+          Located in between Buildings 1, 2 and 3, the Campus Center is the
+          epicentre of activities in SUTD.
+        </p>
+      </div>
+    </section>
+
+    <section id="fablab">
+      <header>
+        <h2>FabLab</h2>
+      </header>
+      <div class="content">
+        <p class="content-header">Fabrication Lab</p>
+        <p>
+          <br />The Fabrication Lab (FabLab) aims to allow students to design
+          and build almost anything with high-performance machines such as
+          laser cutting and engraving systems, 3D printers, plastic injection
+          molding machines, vertical sanders, and water-jet machines.
+        </p>
+        <p class="content-header">Assembly Space</p>
+        <p>Something</p>
+        <div id="aspace_viewer" class="viewer"></div>
+        <p class="content-header">Electronics Lab</p>
+        <p>Something</p>
+        <div id="elab_viewer" class="viewer"></div>
+        <p class="content-header">24/7 Maker Space</p>
+        <p>Something</p>
+        <div id="mspace_viewer" class="viewer"></div>
+        <p class="content-header">Laser Cutting Room</p>
+        <p>Something</p>
+        <div id="laser_viewer" class="viewer"></div>
+      </div>
+    </section>
+
+    <div class="copyright">&copy; OpenSUTD team. All rights reserved.</div>
+  </div>
+
+  <script src="../assets/js/jquery.min.js"></script>
+  <script src="../assets/js/jquery.scrolly.min.js"></script>
+  <script src="../assets/js/browser.min.js"></script>
+  <script src="../assets/js/breakpoints.min.js"></script>
+  <script src="../assets/js/util.js"></script>
+  <script src="../assets/js/main.js"></script>
+
+  <script>
+    var aspace_viewer = new PhotoSphereViewer({
+      container: "aspace_viewer",
+      panorama: "images/assembly_space.jpg",
+      max_fov: 120,
+      time_anim: false
+    });
+    var elab_viewer = new PhotoSphereViewer({
+      container: "elab_viewer",
+      panorama: "images/fablab_elab.jpg",
+      max_fov: 120,
+      time_anim: false
+    });
+    var mspace_viewer = new PhotoSphereViewer({
+      container: "mspace_viewer",
+      panorama: "images/fablab_l2_inside.jpg",
+      max_fov: 120,
+      time_anim: false
+    });
+    var laser_viewer = new PhotoSphereViewer({
+      container: "laser_viewer",
+      panorama: "images/fablab_laser_room.jpg",
+      max_fov: 120,
+      time_anim: false
+    });
+  </script>
+</body>
+
+</html>
