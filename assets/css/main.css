@@ -203,6 +203,10 @@ body {
   overflow-x: hidden;
 }
 
+#wrapper .copyright {
+  margin-top: 1em !important;
+}
+
 body.is-preload *,
 body.is-preload *:before,
 body.is-preload *:after {
