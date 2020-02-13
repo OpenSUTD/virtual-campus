@@ -124,6 +124,7 @@ body {
 }
 
 .content-header {
+  margin-top: 2rem;
   font-size: 2em;
 }
 
@@ -201,10 +202,6 @@ html {
 body {
   background: #ffffff;
   overflow-x: hidden;
-}
-
-#wrapper .copyright {
-  margin-top: 1em !important;
 }
 
 body.is-preload *,
@@ -3615,7 +3612,7 @@ ul.feature-icons li:nth-child(2) {
   }
 
   #wrapper .copyright {
-    padding: 0 4rem;
+    padding: 2rem 4rem;
   }
 }
 
