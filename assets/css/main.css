@@ -135,7 +135,8 @@ body {
 .content-bolder {
   font-weight: bold;
   color: rgba(0, 0, 0, 0.7);
-  padding-top: 0.1em;
+  padding-top: 1em;
+  margin-bottom: 0px;
 }
 
 .content-header {
