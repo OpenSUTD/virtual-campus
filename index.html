@@ -5,11 +5,14 @@
   <title>SUTD Virtual Campus</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  <link rel="stylesheet" href="../assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158523331-2"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
     gtag('config', 'UA-158523331-2');
   </script>
@@ -19,10 +22,16 @@
   <div id="wrapper">
     <section class="intro">
       <header>
-        <h1>SUTD Virtual Campus</h1>
+        <h1><small>SUTD Virtual Campus</small></h1>
         <p>Explore the SUTD campus virtually</p>
         <ul class="actions">
-          <li><a href="#first">START</a></li>
+          <li><a href="#first">WHAT'S THIS?</a></li>
+        </ul>
+        <p class="locations">Locations</p>
+        <ul class="actions">
+          <li><a href="#campus">CAMPUS</a></li>
+          <li><a href="#hostel">HOUSING</a></li>
+          <li><a href="#hostel">NIGHT WALK</a></li>
         </ul>
       </header>
       <div class="content">
@@ -42,7 +51,7 @@
       </div>
     </section>
 
-    <section>
+    <section id="campus">
       <header>
         <h2>Main Campus</h2>
       </header>
@@ -51,7 +60,7 @@
         <p class="content-bolder">Explore SUTD's main campus buildings.</p>
         <ul class="actions">
           <li>
-            <a href="campus/" class="button primary large">Start the Tour</a>
+            <a href="campus/" class="button primary large full-width">Start the Tour</a>
           </li>
         </ul>
       </div>
@@ -67,12 +76,12 @@
           Explore our housing and recreational facilities.
         </p>
         <ul class="actions">
-          <li><a href="housing/" class="button primary large">Start the Tour</a></li>
+          <li><a href="housing/" class="button primary large full-width">Start the Tour</a></li>
         </ul>
       </div>
     </section>
 
-    <section>
+    <section id="night">
       <header>
         <h2>Night Walk</h2>
       </header>
@@ -81,9 +90,27 @@
         <p class="content-bolder">Explore some scenes of SUTD's campus at night.</p>
         <ul class="actions">
           <li>
-            <a href="night/" class="button primary large">Start the Tour</a>
+            <a href="night/" class="button primary large full-width">Start the Tour</a>
           </li>
         </ul>
+      </div>
+    </section>
+
+    <section>
+      <header>
+        <h2>More</h2>
+      </header>
+      <div class="content">
+        <p class="content-header">Learn more about SUTD</p>
+        <ul>
+          <li><a target="_blank" href="https://openhouse.sutd.edu.sg/">Open House 2020 Website</a><br></li>
+          <li><a target="_blank" href="https://sutd.edu.sg/">SUTD Website</a><br></li>
+          <li><a target="_blank" href="https://www.youtube.com/user/SUTDSingapore">SUTD YouTube Channel</a><br></li>
+        </ul>
+        <p class="content-header">Other Student Initiatives</p>
+        <p>For other student intiatives, visit our <a target="_blank" href="https://openhouse.opensutd.org/">OpenSUTD
+            landing page</a>.
+        </p>
       </div>
     </section>
 

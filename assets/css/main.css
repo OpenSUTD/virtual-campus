@@ -118,6 +118,16 @@ body {
   line-height: 1;
 }
 
+.locations {
+  font-weight: bold;
+  color: whitesmoke;
+  margin-bottom: 0px;
+}
+
+.full-width{
+  width: 100%;
+}
+
 .viewer {
   height: 450px;
 }
