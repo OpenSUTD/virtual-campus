@@ -242,7 +242,7 @@ html {
 
 @media screen and (max-width: 1920px) {
   html {
-    font-size: 13pt;
+    font-size: 11pt;
   }
 }
 
@@ -3584,7 +3584,7 @@ ul.feature-icons li:nth-child(2) {
 
   #wrapper>section>header:before {
     height: calc(100% + 8rem);
-    left: calc(50vw - 4rem);
+    left: calc(50vw - 16.75rem);
   }
 
   #wrapper>section>header h1:before,
@@ -3611,7 +3611,7 @@ ul.feature-icons li:nth-child(2) {
   }
 
   #wrapper>section.intro>header:before {
-    margin-left: calc(35vw - 8rem);
+    margin-left: calc(35vw + 4rem);
   }
 }
 
